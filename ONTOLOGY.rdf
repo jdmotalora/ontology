@@ -1,0 +1,1044 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/kg-plub/ontology#"
+     xml:base="http://purl.org/kg-plub/ontology"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:sh="http://www.w3.org/ns/shacl#"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:geo="http://www.opengis.net/ont/geosparql#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:time="http://www.w3.org/2006/time#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:ontology="http://purl.org/kg-plub/ontology#">
+    <owl:Ontology rdf:about="http://purl.org/kg-plub/ontology">
+        <owl:imports rdf:resource="http://www.opengis.net/ont/geosparql"/>
+        <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <owl:imports rdf:resource="http://www.w3.org/2006/time"/>
+        <dc:title xml:lang="en">KG-PLUB Enhanced Ontology</dc:title>
+        <dct:abstract xml:lang="en">Enhanced ontology for urban biodiversity design patterns with improved NLP integration and educational features.</dct:abstract>
+        <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-01-15</dct:created>
+        <dct:created>Jose David Martinez Otalora</dct:created>
+        <dct:license>http://creativecommons.org/licenses/by/4.0/.</dct:license>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-07-07</dct:modified>
+        <vann:preferredNamespacePrefix>kgplub</vann:preferredNamespacePrefix>
+        <owl:versionInfo>v2.0</owl:versionInfo>
+        <sh:name></sh:name>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/abstract -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#chatbotPrompt -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/kg-plub/ontology#chatbotPrompt">
+        <rdfs:comment xml:lang="en">Template for chatbot responses about this pattern.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">Chatbot Prompt</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#extractionPattern -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/kg-plub/ontology#extractionPattern">
+        <rdfs:comment xml:lang="en">Regular expression for automatic text extraction.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">Extraction Pattern</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#nlpKeywords -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/kg-plub/ontology#nlpKeywords">
+        <rdfs:comment xml:lang="en">Keywords for pattern extraction from scientific texts.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">NLP Keywords</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#semanticCategory -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/kg-plub/ontology#semanticCategory">
+        <rdfs:comment xml:lang="en">Semantic category for NLP classification.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">Semantic Category</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#synonyms -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/kg-plub/ontology#synonyms">
+        <rdfs:comment xml:lang="en">Alternative terms for improved NLP matching.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">Synonyms</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#value -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#maxInclusive -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#maxInclusive"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#minInclusive -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#minInclusive"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#name -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#affects -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/kg-plub/ontology#affects">
+        <rdfs:domain rdf:resource="http://purl.org/kg-plub/ontology#Pattern"/>
+        <rdfs:range rdf:resource="http://purl.org/kg-plub/ontology#Species"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">affects</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#complementedBy -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/kg-plub/ontology#complementedBy">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/kg-plub/ontology#relatedTo"/>
+        <rdfs:domain rdf:resource="http://purl.org/kg-plub/ontology#Pattern"/>
+        <rdfs:range rdf:resource="http://purl.org/kg-plub/ontology#Pattern"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">complemented by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#derivedFrom -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/kg-plub/ontology#derivedFrom">
+        <rdfs:domain rdf:resource="http://purl.org/kg-plub/ontology#Pattern"/>
+        <rdfs:range rdf:resource="http://purl.org/kg-plub/ontology#ResearchPublication"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">derived from</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#enhances -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/kg-plub/ontology#enhances">
+        <rdfs:domain rdf:resource="http://purl.org/kg-plub/ontology#Pattern"/>
+        <rdfs:range rdf:resource="http://purl.org/kg-plub/ontology#EcosystemService"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">enhances</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#hasAction -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/kg-plub/ontology#hasAction">
+        <rdfs:domain rdf:resource="http://purl.org/kg-plub/ontology#Solution"/>
+        <rdfs:range rdf:resource="http://purl.org/kg-plub/ontology#Action"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">has action</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#hasCompetencyLevel -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/kg-plub/ontology#hasCompetencyLevel">
+        <rdfs:domain rdf:resource="http://purl.org/kg-plub/ontology#Pattern"/>
+        <rdfs:range rdf:resource="http://purl.org/kg-plub/ontology#CompetencyLevel"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">has competency level</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#hasContext -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/kg-plub/ontology#hasContext">
+        <rdfs:domain rdf:resource="http://purl.org/kg-plub/ontology#Pattern"/>
+        <rdfs:range rdf:resource="http://purl.org/kg-plub/ontology#Context"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">has context</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#hasDesignGuideline -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/kg-plub/ontology#hasDesignGuideline">
+        <rdfs:domain rdf:resource="http://purl.org/kg-plub/ontology#Pattern"/>
+        <rdfs:range rdf:resource="http://purl.org/kg-plub/ontology#DesignGuideline"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">has design guideline</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#hasLearningObjective -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/kg-plub/ontology#hasLearningObjective">
+        <rdfs:domain rdf:resource="http://purl.org/kg-plub/ontology#Pattern"/>
+        <rdfs:range rdf:resource="http://purl.org/kg-plub/ontology#LearningObjective"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">has learning objective</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#hasProblem -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/kg-plub/ontology#hasProblem">
+        <rdfs:domain rdf:resource="http://purl.org/kg-plub/ontology#Pattern"/>
+        <rdfs:range rdf:resource="http://purl.org/kg-plub/ontology#Problem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#hasScale -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/kg-plub/ontology#hasScale">
+        <rdfs:domain rdf:resource="http://purl.org/kg-plub/ontology#Pattern"/>
+        <rdfs:range rdf:resource="http://purl.org/kg-plub/ontology#Scale"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">has scale</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#hasSolution -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/kg-plub/ontology#hasSolution">
+        <rdfs:domain rdf:resource="http://purl.org/kg-plub/ontology#Pattern"/>
+        <rdfs:range rdf:resource="http://purl.org/kg-plub/ontology#Solution"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#hasUseCase -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/kg-plub/ontology#hasUseCase">
+        <rdfs:domain rdf:resource="http://purl.org/kg-plub/ontology#Pattern"/>
+        <rdfs:range rdf:resource="http://purl.org/kg-plub/ontology#UseCase"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">has use case</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#measures -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/kg-plub/ontology#measures">
+        <rdfs:domain rdf:resource="http://purl.org/kg-plub/ontology#Pattern"/>
+        <rdfs:range rdf:resource="http://purl.org/kg-plub/ontology#BiodiversityIndicator"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">measures</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#refinedBy -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/kg-plub/ontology#refinedBy">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/kg-plub/ontology#relatedTo"/>
+        <rdfs:domain rdf:resource="http://purl.org/kg-plub/ontology#Pattern"/>
+        <rdfs:range rdf:resource="http://purl.org/kg-plub/ontology#Pattern"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">refined by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#relatedTo -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/kg-plub/ontology#relatedTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#related"/>
+        <rdfs:domain rdf:resource="http://purl.org/kg-plub/ontology#Pattern"/>
+        <rdfs:range rdf:resource="http://purl.org/kg-plub/ontology#Pattern"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">related to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#relatedToPattern -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/kg-plub/ontology#relatedToPattern">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/kg-plub/ontology#relatedTo"/>
+        <rdfs:domain rdf:resource="http://purl.org/kg-plub/ontology#Pattern"/>
+        <rdfs:range rdf:resource="http://purl.org/kg-plub/ontology#Pattern"/>
+        <rdfs:comment xml:lang="en">Specific relationship to another pattern for pattern language connections.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">related to pattern</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#supportedBy -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/kg-plub/ontology#supportedBy">
+        <rdfs:domain rdf:resource="http://purl.org/kg-plub/ontology#Pattern"/>
+        <rdfs:range rdf:resource="http://purl.org/kg-plub/ontology#ScientificEvidence"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">supported by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#class -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/shacl#class"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#datatype -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/shacl#datatype"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#in -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/shacl#in"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#path -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/shacl#path"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#property -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/shacl#property"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#targetClass -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/shacl#targetClass"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#hasConfidenceScore -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/kg-plub/ontology#hasConfidenceScore">
+        <rdfs:domain rdf:resource="http://purl.org/kg-plub/ontology#Pattern"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">Confidence score for NLP-extracted patterns (0.0-1.0).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">has confidence score</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#hasEffectivenessRating -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/kg-plub/ontology#hasEffectivenessRating">
+        <rdfs:domain rdf:resource="http://purl.org/kg-plub/ontology#Pattern"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#hasImplementationCost -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/kg-plub/ontology#hasImplementationCost">
+        <rdfs:domain rdf:resource="http://purl.org/kg-plub/ontology#Action"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#hasPatternNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/kg-plub/ontology#hasPatternNumber">
+        <rdfs:domain rdf:resource="http://purl.org/kg-plub/ontology#Pattern"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#hasPriority -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/kg-plub/ontology#hasPriority">
+        <rdfs:domain rdf:resource="http://purl.org/kg-plub/ontology#Action"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">Priority level for action implementation (1-5 scale).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">has priority</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#hasSuccessRate -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/kg-plub/ontology#hasSuccessRate">
+        <rdfs:domain rdf:resource="http://purl.org/kg-plub/ontology#UseCase"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">Success rate of pattern implementation in real cases (0.0-1.0).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">has success rate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#hasTimeframe -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/kg-plub/ontology#hasTimeframe">
+        <rdfs:domain rdf:resource="http://purl.org/kg-plub/ontology#Action"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Expected timeframe for implementation (short, medium, long term).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">has timeframe</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#maxCount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/shacl#maxCount"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#minCount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/shacl#minCount"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#Action -->
+
+    <owl:Class rdf:about="http://purl.org/kg-plub/ontology#Action"/>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#AdvancedLevel -->
+
+    <owl:Class rdf:about="http://purl.org/kg-plub/ontology#AdvancedLevel">
+        <rdfs:subClassOf rdf:resource="http://purl.org/kg-plub/ontology#CompetencyLevel"/>
+        <rdfs:label xml:lang="en">Advanced Level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#AnimalSpecies -->
+
+    <owl:Class rdf:about="http://purl.org/kg-plub/ontology#AnimalSpecies">
+        <rdfs:subClassOf rdf:resource="http://purl.org/kg-plub/ontology#Species"/>
+        <rdfs:comment xml:lang="en">Animal species targeted by urban biodiversity patterns.</rdfs:comment>
+        <rdfs:label xml:lang="en">Animal Species</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#BeginnerLevel -->
+
+    <owl:Class rdf:about="http://purl.org/kg-plub/ontology#BeginnerLevel">
+        <rdfs:subClassOf rdf:resource="http://purl.org/kg-plub/ontology#CompetencyLevel"/>
+        <rdfs:label xml:lang="en">Beginner Level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#BiodiversityIndicator -->
+
+    <owl:Class rdf:about="http://purl.org/kg-plub/ontology#BiodiversityIndicator">
+        <rdfs:comment xml:lang="en">Measurable metrics for assessing biodiversity outcomes.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">Biodiversity Indicator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#CompetencyLevel -->
+
+    <owl:Class rdf:about="http://purl.org/kg-plub/ontology#CompetencyLevel">
+        <rdfs:comment xml:lang="en">Level of expertise required to understand and apply the pattern.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">Competency Level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#Context -->
+
+    <owl:Class rdf:about="http://purl.org/kg-plub/ontology#Context">
+        <rdfs:comment xml:lang="en">Environmental and social conditions determining pattern applicability.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">Context</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#CulturalService -->
+
+    <owl:Class rdf:about="http://purl.org/kg-plub/ontology#CulturalService">
+        <rdfs:subClassOf rdf:resource="http://purl.org/kg-plub/ontology#EcosystemService"/>
+        <rdfs:comment xml:lang="en">Services providing recreational, aesthetic, spiritual benefits.</rdfs:comment>
+        <rdfs:label xml:lang="en">Cultural Service</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#DesignAction -->
+
+    <owl:Class rdf:about="http://purl.org/kg-plub/ontology#DesignAction">
+        <rdfs:subClassOf rdf:resource="http://purl.org/kg-plub/ontology#Action"/>
+        <rdfs:comment xml:lang="en">Actions related to spatial design and planning.</rdfs:comment>
+        <rdfs:label xml:lang="en">Design Action</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#DesignGuideline -->
+
+    <owl:Class rdf:about="http://purl.org/kg-plub/ontology#DesignGuideline">
+        <rdfs:comment xml:lang="en">Specific recommendations for implementing a pattern.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">Design Guideline</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#EcosystemService -->
+
+    <owl:Class rdf:about="http://purl.org/kg-plub/ontology#EcosystemService">
+        <rdfs:comment xml:lang="en">Benefits provided by urban ecosystems to human well-being.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">Ecosystem Service</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#EcosystemServicesPattern -->
+
+    <owl:Class rdf:about="http://purl.org/kg-plub/ontology#EcosystemServicesPattern">
+        <rdfs:subClassOf rdf:resource="http://purl.org/kg-plub/ontology#Pattern"/>
+        <rdfs:comment xml:lang="en">Patterns that enhance urban ecosystem services delivery.</rdfs:comment>
+        <rdfs:label xml:lang="en">Ecosystem Services Pattern</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#HabitatConnectivityPattern -->
+
+    <owl:Class rdf:about="http://purl.org/kg-plub/ontology#HabitatConnectivityPattern">
+        <rdfs:subClassOf rdf:resource="http://purl.org/kg-plub/ontology#Pattern"/>
+        <rdfs:comment xml:lang="en">Patterns focused on connecting fragmented urban habitats.</rdfs:comment>
+        <rdfs:label xml:lang="en">Habitat Connectivity Pattern</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#IntermediateLevel -->
+
+    <owl:Class rdf:about="http://purl.org/kg-plub/ontology#IntermediateLevel">
+        <rdfs:subClassOf rdf:resource="http://purl.org/kg-plub/ontology#CompetencyLevel"/>
+        <rdfs:label xml:lang="en">Intermediate Level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#LearningObjective -->
+
+    <owl:Class rdf:about="http://purl.org/kg-plub/ontology#LearningObjective">
+        <rdfs:comment xml:lang="en">Educational goals associated with pattern understanding.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">Learning Objective</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#MacroScale -->
+
+    <owl:Class rdf:about="http://purl.org/kg-plub/ontology#MacroScale">
+        <rdfs:subClassOf rdf:resource="http://purl.org/kg-plub/ontology#Scale"/>
+        <rdfs:comment xml:lang="en">City-wide or regional scale (&gt;10km).</rdfs:comment>
+        <rdfs:label xml:lang="en">Macro Scale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#MaintenanceAction -->
+
+    <owl:Class rdf:about="http://purl.org/kg-plub/ontology#MaintenanceAction">
+        <rdfs:subClassOf rdf:resource="http://purl.org/kg-plub/ontology#Action"/>
+        <rdfs:comment xml:lang="en">Actions related to ecosystem maintenance and management.</rdfs:comment>
+        <rdfs:label xml:lang="en">Maintenance Action</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#MesoScale -->
+
+    <owl:Class rdf:about="http://purl.org/kg-plub/ontology#MesoScale">
+        <rdfs:subClassOf rdf:resource="http://purl.org/kg-plub/ontology#Scale"/>
+        <rdfs:comment xml:lang="en">Neighborhood or district scale (100m-10km).</rdfs:comment>
+        <rdfs:label xml:lang="en">Meso Scale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#MicroScale -->
+
+    <owl:Class rdf:about="http://purl.org/kg-plub/ontology#MicroScale">
+        <rdfs:subClassOf rdf:resource="http://purl.org/kg-plub/ontology#Scale"/>
+        <rdfs:comment xml:lang="en">Building or site-level scale (1-100m).</rdfs:comment>
+        <rdfs:label xml:lang="en">Micro Scale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#MonitoringAction -->
+
+    <owl:Class rdf:about="http://purl.org/kg-plub/ontology#MonitoringAction">
+        <rdfs:subClassOf rdf:resource="http://purl.org/kg-plub/ontology#Action"/>
+        <rdfs:comment xml:lang="en">Actions for monitoring and evaluating pattern effectiveness.</rdfs:comment>
+        <rdfs:label xml:lang="en">Monitoring Action</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#Pattern -->
+
+    <owl:Class rdf:about="http://purl.org/kg-plub/ontology#Pattern">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#PlantSpecies -->
+
+    <owl:Class rdf:about="http://purl.org/kg-plub/ontology#PlantSpecies">
+        <rdfs:subClassOf rdf:resource="http://purl.org/kg-plub/ontology#Species"/>
+        <rdfs:comment xml:lang="en">Plant species targeted by urban biodiversity patterns.</rdfs:comment>
+        <rdfs:label xml:lang="en">Plant Species</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#Problem -->
+
+    <owl:Class rdf:about="http://purl.org/kg-plub/ontology#Problem"/>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#ProvisioningService -->
+
+    <owl:Class rdf:about="http://purl.org/kg-plub/ontology#ProvisioningService">
+        <rdfs:subClassOf rdf:resource="http://purl.org/kg-plub/ontology#EcosystemService"/>
+        <rdfs:comment xml:lang="en">Services providing resources like food, water, materials.</rdfs:comment>
+        <rdfs:label xml:lang="en">Provisioning Service</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#RegulatingService -->
+
+    <owl:Class rdf:about="http://purl.org/kg-plub/ontology#RegulatingService">
+        <rdfs:subClassOf rdf:resource="http://purl.org/kg-plub/ontology#EcosystemService"/>
+        <rdfs:comment xml:lang="en">Services regulating climate, water, air quality, etc.</rdfs:comment>
+        <rdfs:label xml:lang="en">Regulating Service</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#ResearchPublication -->
+
+    <owl:Class rdf:about="http://purl.org/kg-plub/ontology#ResearchPublication">
+        <rdfs:comment xml:lang="en">Scientific publication containing relevant knowledge for patterns.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">Research Publication</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#Scale -->
+
+    <owl:Class rdf:about="http://purl.org/kg-plub/ontology#Scale">
+        <rdfs:comment xml:lang="en">The spatial scale at which a pattern is applied.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">Scale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#ScientificEvidence -->
+
+    <owl:Class rdf:about="http://purl.org/kg-plub/ontology#ScientificEvidence">
+        <rdfs:comment xml:lang="en">Scientific studies or data supporting the pattern effectiveness.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">Scientific Evidence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#Solution -->
+
+    <owl:Class rdf:about="http://purl.org/kg-plub/ontology#Solution"/>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#Species -->
+
+    <owl:Class rdf:about="http://purl.org/kg-plub/ontology#Species">
+        <rdfs:comment xml:lang="en">Plant or animal species affected by urban design patterns.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">Species</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#SpeciesDiversityPattern -->
+
+    <owl:Class rdf:about="http://purl.org/kg-plub/ontology#SpeciesDiversityPattern">
+        <rdfs:subClassOf rdf:resource="http://purl.org/kg-plub/ontology#Pattern"/>
+        <rdfs:comment xml:lang="en">Patterns aimed at promoting species diversity in urban environments.</rdfs:comment>
+        <rdfs:label xml:lang="en">Species Diversity Pattern</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#SupportingService -->
+
+    <owl:Class rdf:about="http://purl.org/kg-plub/ontology#SupportingService">
+        <rdfs:subClassOf rdf:resource="http://purl.org/kg-plub/ontology#EcosystemService"/>
+        <rdfs:comment xml:lang="en">Services supporting ecosystem functioning like nutrient cycling.</rdfs:comment>
+        <rdfs:label xml:lang="en">Supporting Service</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#UseCase -->
+
+    <owl:Class rdf:about="http://purl.org/kg-plub/ontology#UseCase">
+        <rdfs:comment xml:lang="en">Real-world implementation example of a pattern.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">Use Case</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#NodeShape -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/shacl#NodeShape"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#PropertyShape -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/shacl#PropertyShape"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#Action -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/kg-plub/ontology#Action"/>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#ActionValidation -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/kg-plub/ontology#ActionValidation">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <sh:property rdf:nodeID="genid1"/>
+        <sh:property rdf:nodeID="genid2"/>
+        <sh:targetClass rdf:resource="http://purl.org/kg-plub/ontology#Action"/>
+    </owl:NamedIndividual>
+    <rdf:Description rdf:nodeID="genid1">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <sh:path rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid2">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <sh:in>
+            <rdf:Description/>
+        </sh:in>
+        <sh:path rdf:resource="http://purl.org/kg-plub/ontology#hasImplementationCost"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#EffectivenessValidation -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/kg-plub/ontology#EffectivenessValidation">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <sh:property rdf:nodeID="genid4"/>
+        <sh:targetClass rdf:resource="http://purl.org/kg-plub/ontology#Pattern"/>
+    </owl:NamedIndividual>
+    <rdf:Description rdf:nodeID="genid4">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <sh:path rdf:resource="http://purl.org/kg-plub/ontology#hasEffectivenessRating"/>
+        <sh:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</sh:maxInclusive>
+        <sh:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minInclusive>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#Pattern -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/kg-plub/ontology#Pattern"/>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#PatternValidation -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/kg-plub/ontology#PatternValidation">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <sh:property rdf:nodeID="genid5"/>
+        <sh:property rdf:nodeID="genid6"/>
+        <sh:property rdf:nodeID="genid7"/>
+        <sh:property rdf:nodeID="genid8"/>
+        <sh:targetClass rdf:resource="http://purl.org/kg-plub/ontology#Pattern"/>
+    </owl:NamedIndividual>
+    <rdf:Description rdf:nodeID="genid5">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <sh:path rdf:resource="http://purl.org/kg-plub/ontology#hasPatternNumber"/>
+        <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
+        <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
+        <sh:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minInclusive>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid6">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <sh:path rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid7">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <sh:class rdf:resource="http://purl.org/kg-plub/ontology#Problem"/>
+        <sh:path rdf:resource="http://purl.org/kg-plub/ontology#hasProblem"/>
+        <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid8">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <sh:class rdf:resource="http://purl.org/kg-plub/ontology#Solution"/>
+        <sh:path rdf:resource="http://purl.org/kg-plub/ontology#hasSolution"/>
+        <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#Problem -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/kg-plub/ontology#Problem"/>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#Solution -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/kg-plub/ontology#Solution"/>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#hasEffectivenessRating -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/kg-plub/ontology#hasEffectivenessRating"/>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#hasImplementationCost -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/kg-plub/ontology#hasImplementationCost"/>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#hasPatternNumber -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/kg-plub/ontology#hasPatternNumber"/>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#hasProblem -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/kg-plub/ontology#hasProblem"/>
+    
+
+
+    <!-- http://purl.org/kg-plub/ontology#hasSolution -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/kg-plub/ontology#hasSolution"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#integer -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2001/XMLSchema#integer"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#string -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:Description>
+        <rdf:value>low</rdf:value>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:value>high</rdf:value>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:value>medium</rdf:value>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.org/kg-plub/ontology#Action">
+        <rdfs:comment xml:lang="en">Specific implementable actions that realize the pattern solution.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">Action</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/kg-plub/ontology#Pattern">
+        <rdfs:comment xml:lang="en">A design pattern for urban biodiversity following Christopher Alexander&apos;s methodology.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">Pattern</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/kg-plub/ontology#Problem">
+        <rdfs:comment xml:lang="en">An ecological challenge that negatively affects urban biodiversity.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">Problem</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/kg-plub/ontology#Solution">
+        <rdfs:comment xml:lang="en">A design intervention that addresses urban biodiversity problems.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">Solution</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/kg-plub/ontology#hasEffectivenessRating">
+        <rdfs:comment xml:lang="en">Effectiveness rating based on evidence (1-5 scale).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">has effectiveness rating</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/kg-plub/ontology#hasImplementationCost">
+        <rdfs:comment xml:lang="en">Estimated cost level (low, medium, high) for implementing the action.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">has implementation cost</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/kg-plub/ontology#hasPatternNumber">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">has pattern number</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/kg-plub/ontology#hasProblem">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">has problem</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/kg-plub/ontology#hasSolution">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+        <rdfs:label xml:lang="en">has solution</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
