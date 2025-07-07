@@ -355,13 +355,22 @@
     <sh:class rdf:resource="http://purl.org/kg-plub/ontology#Solution"/>
   </rdf:Description>
 
-</rdf:RDF>
-
-<!-- CLASE ACTION FALTANTE -->
+  <!-- CLASE ACTION Y ESPECIALIZACIONES -->
   <rdf:Description rdf:about="http://purl.org/kg-plub/ontology#Action">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:label xml:lang="en">Action</rdfs:label>
     <rdfs:comment xml:lang="en">Specific implementable actions that realize the pattern solution.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
+  </rdf:Description>
+
+  <!-- RELACIÓN RELATEDTOPATTERN FALTANTE -->
+  <rdf:Description rdf:about="http://purl.org/kg-plub/ontology#relatedToPattern">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/kg-plub/ontology#relatedTo"/>
+    <rdfs:domain rdf:resource="http://purl.org/kg-plub/ontology#Pattern"/>
+    <rdfs:range rdf:resource="http://purl.org/kg-plub/ontology#Pattern"/>
+    <rdfs:label xml:lang="en">related to pattern</rdfs:label>
+    <rdfs:comment xml:lang="en">Specific relationship to another pattern for pattern language connections.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/kg-plub/ontology"/>
   </rdf:Description>
 
@@ -594,3 +603,6 @@
     <sh:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minInclusive>
     <sh:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</sh:maxInclusive>
   </rdf:Description>
+
+
+</rdf:RDF>
